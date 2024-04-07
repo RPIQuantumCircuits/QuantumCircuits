@@ -1,0 +1,14 @@
+Quantum Properties: Discretization-energy has levels, but no  nuance just discrete values. Because of this,
+ we can either use quantum objects as 0 or 1 the building blocks of computing. Superposition. Interference- the 
+ quantum states of objects can add up or cancel out. Entanglement- it doesn’t matter the distance, particles 
+ affect each other. Each quantum object affect each other.
+What makes quantum possible? Anything that can be measured consistently in a particle is called a particle property.
+ Otherwise it would be waves. What is double slit experiment? Just shows interference of waves. Also shows 
+ difference between waves and particles, particles just pass through. We can think of qubits both as waves and 
+ particles.
+Superposition can also happen with waves by combining the waves.
+Discretization with waves because quantum objects are confined, they are molded into to different shapes/energies.
+ Confinement can exist naturally or artificially.
+Ket notation shows state of qubits. To visually see a qubit state use bloch sphere, but can’t see entanglement.
+Quantum gates are the knobs that manipulate the qubits. From logic gates. Operation of gates can be visualized 
+operations on the bloch sphere.
