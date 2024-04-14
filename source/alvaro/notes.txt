@@ -12,3 +12,7 @@ Discretization with waves because quantum objects are confined, they are molded 
 Ket notation shows state of qubits. To visually see a qubit state use bloch sphere, but can’t see entanglement.
 Quantum gates are the knobs that manipulate the qubits. From logic gates. Operation of gates can be visualized 
 operations on the bloch sphere.
+
+A superposition can have equal or unequal state being affected. The closer to states 0 or 1 the state of quantum object is the line is the more it is influenced.
+The Z gate changes the 1 state to be negative but that doesn’t affect where the sate lies.
+|+> |-> represent superposition, x gate: moves 180 across the x axis.
