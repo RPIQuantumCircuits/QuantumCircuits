@@ -16,3 +16,22 @@ operations on the bloch sphere.
 A superposition can have equal or unequal state being affected. The closer to states 0 or 1 the state of quantum object is the line is the more it is influenced.
 The Z gate changes the 1 state to be negative but that doesn’t affect where the sate lies.
 |+> |-> represent superposition, x gate: moves 180 across the x axis.
+
+How to find out the state the qubit was in? Measurement is the final step of any circuit. In order to compute with 
+qubits we measure to see what states they are in. Measurement can change the state of the qubit to the state that 
+the measurement gave result to. This is called collapse/or in my word remnance. You can visualize it in waves.
+When measuring qubits in a superposition, what we get is a random result. The steps to measure when the qubit 
+is in superposition is Repeat the measurement many times, find the average state/or statistical distribution. 
+We can predict the probability of results of the measurement.
+
+The born rule normalizes the vector then squares it. This gives you the probability of measuring it in the given
+state. Physicists do not fully know if the Born rule works. This is where vectors come in handy. The vector notation
+for qubit states allows us to represent the component of |0> and |1> in a superposition state mathematically.
+A gate equals a matrix= transformations of states. To compress gates, we can multiply them. Matrix multiplication 
+as usual. However we rarely multiply two gates. We do matrix-vector multiplication, because a quantum state
+is vector. Superposition is an important quantum resource, later shown. So if you want to scramble your 
+state to get superposition, you can use the Hadamard. 
+
+
+
+
