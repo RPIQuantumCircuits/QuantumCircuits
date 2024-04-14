@@ -32,6 +32,19 @@ as usual. However we rarely multiply two gates. We do matrix-vector multiplicati
 is vector. Superposition is an important quantum resource, later shown. So if you want to scramble your 
 state to get superposition, you can use the Hadamard. 
 
+Multiple systems:
+The probabilistic states of the compound system is equivalent to the probabilistic states of the cartesian product of
+the each individual classical system. Thus the sum of the parts is greater than the whole because we first have to 
+merge the two systems and then we compute the probabilistic state, instead of just multiplying the individual 
+probabilities.
+Compound systems can be independent if the probability for X to be in one classical state, and the probability for Y
+to be in another classical state don’t have anything to do with each other. One person in a room rolling a die, 
+another  person in a room flipping a coin then this set up used to get probabilities of different combinatinos of 
+states to appear.
+Tensor product of vectors, is just the default way of multiplying 2 column vectors. Tensor product notation 
+can also be written inside of ket. We preserve lexicographical order. Returns a column vector. What if 
+column vectors not the same size? The tensor product of 2 vectors is bilinear.
+
 
 
 
