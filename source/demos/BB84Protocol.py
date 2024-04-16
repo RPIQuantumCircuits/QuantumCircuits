@@ -1,10 +1,10 @@
 from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister, execute, Aer
 
 def bb84():
-    # Create a 2 qubit QuantumRegister - two for Alice and two for Bob
-    qr = QuantumRegister(2, name="q")
-    # Create a 2 bit ClassicalRegister to hold measurements
-    cr = ClassicalRegister(2, name="c")
+    # Create a 3 qubit QuantumRegister - two for Alice, one for Bob, and one for Eve
+    qr = QuantumRegister(3, name="q")
+    # Create a 3 bit ClassicalRegister to hold measurements
+    cr = ClassicalRegister(3, name="c")
     # Create a QuantumCircuit from the qr and cr
     circuit = QuantumCircuit(qr, cr)
 
@@ -16,13 +16,19 @@ def bb84():
     circuit.barrier()
 
     ## Step 2
+    # Eve intercepts and measures the qubits in the {|0>, |1>} basis
+    circuit.measure(qr[0], cr[2]) # Measure first qubit in Z basis
+    circuit.measure(qr[1], cr[2]) # Measure second qubit in Z basis
+    circuit.barrier()
+
+    ## Step 3
     # Bob measures the qubits in the {|0>, |1>} and {|+>, |->} bases randomly
     circuit.measure(qr[0], cr[0]) # Measure first qubit in Z basis
     circuit.h(qr[1]) # Change second qubit to Z basis
     circuit.measure(qr[1], cr[1]) # And measure it
     circuit.barrier()
 
-    ## Step 3
+    ## Step 4
     # Alice tells Bob which qubits were encoded in which basis
     # If Bob measured in the same basis, the bit is kept, otherwise it is discarded
 
