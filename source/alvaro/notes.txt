@@ -45,6 +45,25 @@ Tensor product of vectors, is just the default way of multiplying 2 column vecto
 can also be written inside of ket. We preserve lexicographical order. Returns a column vector. What if 
 column vectors not the same size? The tensor product of 2 vectors is bilinear.
 
+To measure of probabilistic state of multiple system for example (X, Y), what happens if we just measure just X and 
+do nothing to Y? We get the probability of X, We should act as if we had also measure Y. So there is still some uncertainty
+ in Y, and this is represented as a conditional Probability.  PR(Y = a | X = b)
+How to better represent these probabilities? Dirac notation. You use sigma to some all the sets. The probability to get outcome
+ a is the sum of all probailites that appear in ket a.
+Example SO when you have two bits that represent states, you have a probabilistic equation of: 00, 01, 10, 11. Each has its 
+probability as a coefficient. If you measure the first bit, get the first bit out by factoring. SO the first measurement of 
+outcome 0 for example will be equal to the sum of the probabilities inside of the parentheses. 
+If you are extracting the probability for the second qubit, standard notation is to factor it towards the right side. 
+Operations on probabilistic states: Just treating a compound system as a single system. And applying operations to it like
+ it was. How does one convert from standard basis to matrix again? 
+So we can also perform compound operations to compound systems, this means that the operation should happen simultaneously 
+on both sub-systems X and Y.  The way to do this is tensor products to multiply matrices, because we are not using vectors.
+ Notice there is tensor product of matrices and then theres tensor product of vectors. 
+SO the tensor product is essentially taking the second matrix, replicating it for every entry in the first matrix, and then
+ for each corresponding entry in the first matrix multiply it to the replicas.  That will create your product. Good example
+  in the video. 
+
+
 
 
 
